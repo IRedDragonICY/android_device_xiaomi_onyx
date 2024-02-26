@@ -824,3 +824,6 @@ service vendor.audio-hal-aidl /vendor/bin/hw/audiohalservice.qti
 
     # Only owner can acces this node
     chmod 440 /proc/net/unix
+
+    # STOP EATING MY BATTERY AFTER 100H OF UPTIME FUCK YOU
+    stop statsd
