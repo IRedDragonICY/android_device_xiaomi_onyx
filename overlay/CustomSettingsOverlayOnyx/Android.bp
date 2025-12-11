@@ -4,6 +4,6 @@
 //
 
 runtime_resource_overlay {
-    name: "LineageSettingsOverlayOnyx",
-    system_ext_specific: true,
+    name: "CustomSettingsOverlayOnyx",
+    product_specific: true,
 }
