@@ -137,6 +137,60 @@ vendor/lib64/libxlog.so
 vendor/lib64/vendor.qti.hardware.ListenSoundModelAidl-V1-ndk.so
 vendor/lib64/vendor.qti.hardware.qasr-V2-ndk.so
 
+# Audio — Core AAUDIO/Framework
+aaudio.hw_burst_min_usec=2000
+aaudio.mmap_exclusive_policy=2
+aaudio.mmap_policy=2
+ro.audio.flinger_standbytime_ms=2000
+ro.audio.stereo_spatialization_enabled=true
+ro.audio.monitorRotation=true
+ro.audio.spatializer_enabled=true
+
+# Audio — MiSound / SFX
+persist.vendor.audio.misound.disable=true
+ro.vendor.audio.soundfx.type=mi
+ro.vendor.audio.soundfx.usb=true
+ro.vendor.audio.sfx.earadj=true
+ro.vendor.audio.sfx.scenario=true
+ro.vendor.audio.fweffect=true
+ro.vendor.audio.ear.scan.support=true
+
+# Audio — Feature Flags (from stock 301 ODM build.prop)
+ro.vendor.audio.aiasst.support=true
+ro.vendor.audio.btsamplerate.adaptive=true
+ro.vendor.audio.dualadc.support=true
+ro.vendor.audio.extendtonecallendedlength=true
+ro.vendor.audio.feature.fade=true
+ro.vendor.audio.feature.spatial=5
+ro.vendor.audio.gain.support=true
+ro.vendor.audio.multi.channel=true
+ro.vendor.audio.multichannel.5point1=false
+ro.vendor.audio.multichannel.5point1.headset=true
+ro.vendor.audio.multiroute=true
+ro.vendor.audio.notification.single=true
+ro.vendor.audio.remotesubmix.support_multichannel=true
+ro.vendor.audio.sos=true
+ro.vendor.audio.spk.stereo=true
+ro.vendor.audio.support.sound.id=true
+ro.vendor.audio.surround.headphone.only=true
+ro.vendor.audio.videobox.switch=true
+
+# Audio — VoIP / Voice / Meeting (RE: libaudiocorehal.qti.so)
+# volume.boost.support=5 → enables updateVoipVolumeBoost() with 5 boost levels
+# meeting.mode=true → enables MiMeetingQcom (CSS, VPNR, focus mode, rotation)
+# meeting.mode.type=2 → full Qcom MiMeetingQcom implementation
+# call.tx.ns=true → TX noise suppression during voice calls
+# algorithm.support=Fluence → Qualcomm Fluence noise reduction
+ro.vendor.audio.volume.boost.support=5
+ro.vendor.audio.meeting.mode=true
+ro.vendor.audio.meeting.mode.type=2
+ro.vendor.audio.voice.change.support=true
+ro.vendor.audio.voice.change.version=2
+ro.vendor.audio.voice.change.youme.support=true
+ro.vendor.audio.algorithm.support=Fluence
+persist.vendor.audio.call.tx.ns=true
+persist.vendor.audio.auto.scenario=true
+
 # Audio - old AIDL dependencies
 vendor/lib64/android.hardware.bluetooth.audio-impl.so:vendor/lib64/android.hardware.bluetooth.audio-impl_prebuilt.so;FIX_SONAME
 vendor/lib64/libaudio_aidl_conversion_common_ndk.so:vendor/lib64/libaudio_aidl_conversion_common_ndk_prebuilt.so;DISABLE_DEPS;FIX_SONAME
