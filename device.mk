@@ -25,6 +25,9 @@ $(call inherit-product, hardware/qcom-caf/common/common.mk)
 # Pvt-Keys
 $(call inherit-product, vendor/sharmagrit-priv/keys/keys.mk)
 
+# AxionFx
+$(call inherit-product, packages/apps/AxionFx/config.mk)
+
 # A/B
 AB_OTA_POSTINSTALL_CONFIG += \
     RUN_POSTINSTALL_system=true \
