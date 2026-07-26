@@ -12,4 +12,12 @@
         <version>1</version>
         <fqname>IMiFxTunnel/default</fqname>
     </hal>
+    <hal format="aidl">
+        <name>vendor.dolby.dms</name>
+        <fqname>IDms/default</fqname>
+    </hal>
+    <hal format="aidl">
+        <name>android.hardware.media.c2</name>
+        <fqname>IComponentStore/default9</fqname>
+    </hal>
 </manifest>
